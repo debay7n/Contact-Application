@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.contact.HelloController"
+            prefWidth="400" prefHeight="400">
+    <ImageView fitWidth="500" fitHeight="500">
+    <image>
+        <Image url="@background.jpg"/>
+    </image>
+    </ImageView>
+
+    <Text layoutX="150" layoutY="50" text="MY CONTACTS" stroke="cadetblue">
+        <font>
+        <Font size="30"/>
+        </font>
+    </Text>
+ <Text layoutX="90" layoutY="180" text="Search Contact Name" stroke="bisque" >
+     <font>
+         <Font size="15"/>
+     </font>
+ </Text>
+    <Text layoutX="90" layoutY="300" text="Add new Contact" stroke="bisque" >
+        <font>
+            <Font size="15"/>
+        </font>
+    </Text>
+
+    <Text layoutX="90" layoutY="330" text="Add Number" stroke="bisque" >
+        <font>
+            <Font size="15"/>
+        </font>
+    </Text>
+
+    <TextField fx:id="searchname" layoutX="250" layoutY="165" maxHeight="20" maxWidth="100" promptText="Search name"/>
+    <TextField fx:id="neww" layoutX="220" layoutY="283" maxHeight="20" maxWidth="100" promptText="New name"/>
+    <TextField fx:id="number" layoutX="220" layoutY="310" maxHeight="20" maxWidth="100" promptText="Number"/>
+<ImageView layoutX="188" layoutY="70" fitHeight="80" fitWidth="95">
+    <image>
+        <Image url="@icon.png"/>
+    </image>
+</ImageView>
+
+<Button layoutX="250" layoutY="210" text="SEARCH"  onAction="#search"/>
+    <Button layoutX="220" layoutY="350" text="ADD"  onAction="#add"/>
+
+</AnchorPane>
